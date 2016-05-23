@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dssxz.ap.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/deudas"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/pantm"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:theme="@style/AppTheme" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bbs"
+        android:clickable="true"
+        android:contentDescription="@string/bbs"
+        android:cropToPadding="true" />
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:id="@+id/añadir"
+        android:src="@drawable/anadir"
+        android:clickable="true"
+        android:contentDescription="@string/bbs"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp" />
+
+</RelativeLayout>

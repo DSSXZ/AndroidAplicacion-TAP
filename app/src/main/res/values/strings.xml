@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ap</string>
+    <string name="pantm">pantm</string>
+    <string name="bnp">bnp</string>
+    <string name="bbs">bbs</string>
+    <string name="bnpp">bnp</string>
+    <string name="tnombre">Nombre:</string>
+    <string name="ttelefono">Telefono:</string>
+    <string name="tfecha_dev">Fecha Dev:</string>
+</resources>

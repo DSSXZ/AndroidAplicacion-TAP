@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dssxz.ap.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pantm"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/pantm"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:theme="@style/AppTheme" />
+
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bnp"
+        android:contentDescription="@string/bnpp"
+        android:clickable="true" />
+
+</RelativeLayout>
