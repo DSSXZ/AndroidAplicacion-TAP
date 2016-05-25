@@ -16,8 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Deudas"></activity>
-        <activity android:name=".Editar"></activity>
+        <activity android:name=".Deudas"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Editar"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

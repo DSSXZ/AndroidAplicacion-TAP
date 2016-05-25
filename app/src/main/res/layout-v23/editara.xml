@@ -52,14 +52,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Objeto: "
+        android:text="Objeto"
         android:id="@+id/textView2"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,11 +69,11 @@
         android:id="@+id/textView3"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:enabled="true"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/timePicker"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:enabled="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -101,11 +101,9 @@
         android:editable="true"
         android:clickable="true"
         android:autoText="true"
-        android:layout_below="@+id/textView4"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
     <DatePicker
         android:layout_width="wrap_content"
@@ -113,8 +111,7 @@
         android:id="@+id/timePicker"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="85dp"
-        android:spinnersShown="true" />
+        android:layout_marginBottom="85dp" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -143,52 +140,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignWithParentIfMissing="false"
         android:contentDescription="bap" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView6"
-        android:src="@drawable/bcan"
-        android:scrollIndicators="left|bottom"
-        android:scaleType="fitCenter"
-        android:clickable="true"
-        android:layout_alignWithParentIfMissing="false"
-        android:contentDescription="bap"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="45dp"
-        android:layout_marginEnd="45dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Descripcion: "
-        android:id="@+id/textView4"
-        android:textColor="#000000"
-        android:textSize="28sp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="21dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:password="false"
-        android:phoneNumber="false"
-        android:editable="true"
-        android:clickable="true"
-        android:autoText="true"
-        android:layout_above="@+id/textView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
 
 
 </RelativeLayout>

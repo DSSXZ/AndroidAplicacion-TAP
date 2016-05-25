@@ -28,6 +28,7 @@
         android:src="@drawable/bnp"
         android:contentDescription="@string/bnpp"
         android:clickable="true"
-        android:onClick="ventanaDeudas"/>
+        android:onClick="ventanaDeudas"
+        android:padding="5dp" />
 
 </RelativeLayout>
