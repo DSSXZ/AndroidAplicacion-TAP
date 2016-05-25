@@ -30,7 +30,8 @@
         android:clickable="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:paddingLeft="10dp" />
+        android:paddingLeft="10dp"
+        android:onClick="atras"/>
 
     <TextView
         android:layout_width="wrap_content"
