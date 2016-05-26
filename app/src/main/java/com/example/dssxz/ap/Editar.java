@@ -48,10 +48,18 @@ public class Editar extends Activity{
         String val1 = ((EditText)findViewById(R.id.editText)).getText().toString();
         String val2 = ((EditText)findViewById(R.id.editText2)).getText().toString();
         String val3 =((EditText)findViewById(R.id.editText3)).getText().toString();
-        if(val1.equals("") || val2.equals("") || val3.equals("")){
+        if(val1.equals("") && val2.equals("") && val3.equals("")){
             Toast.makeText(Editar.this, "Se deben insetar todos los datos", Toast.LENGTH_LONG).show();
             return true;
         }
         else{return false;}
+    }
+
+    public void cancelar(View view){
+        ((EditText)findViewById(R.id.editText)).setText("");
+        ((EditText)findViewById(R.id.editText2)).setText("");
+        ((EditText)findViewById(R.id.editText3)).setText("");
+        Intent nuevo3 = new Intent(this, Deudas.class);
+        startActivity(nuevo3);
     }
 }
