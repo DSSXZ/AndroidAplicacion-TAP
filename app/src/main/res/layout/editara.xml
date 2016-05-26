@@ -133,6 +133,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:id="@+id/imageView5"
+        android:onClick="aceptar"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
@@ -143,7 +144,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignWithParentIfMissing="false"
         android:contentDescription="bap"
-        android:onClick="aceptar"/>
+        />
 
     <ImageView
         android:layout_width="70dp"

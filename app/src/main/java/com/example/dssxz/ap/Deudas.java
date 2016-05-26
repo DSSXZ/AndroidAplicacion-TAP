@@ -8,7 +8,7 @@ import android.view.View;
 /**
  * Created by DSSXZ on 20/05/2016.
  */
-public class Deudas extends Activity {
+public class Deudas extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,12 @@ public class Deudas extends Activity {
 
     public void añadir(View view){
         Intent nuevo2= new Intent(this, Editar.class);
+        startActivity(nuevo2);
+
+    }
+
+    public void atras(View view){
+        Intent nuevo2= new Intent(this, MainActivity.class);
         startActivity(nuevo2);
 
     }
