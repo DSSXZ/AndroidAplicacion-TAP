@@ -11,14 +11,15 @@ import android.widget.Toast;
 /**
  * Created by DSSXZ on 20/05/2016.
  */
-public class Editar extends Activity{
-    ImageView imagenBoton;
+public class Editar extends Activity {
+    EditText txtName, txtObj,txtDes;
+    ImageView btnAdd;
+    Boolean debuelto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.editara);
-
     }
 
 
@@ -30,17 +31,33 @@ public class Editar extends Activity{
     }
 
 
+
     public void aceptar(View view){
         if(validar(view)==false) {
+            txtName=(EditText)findViewById(R.id.editText);
+            txtObj=(EditText)findViewById(R.id.editText2);
+            txtDes=(EditText)findViewById(R.id.editText3);
             Intent nuevo1 = new Intent(this, Deudas.class);
             startActivity(nuevo1);
             Toast.makeText(Editar.this, "Se guardo", Toast.LENGTH_SHORT).show();
+            final DBAdapter db=new DBAdapter(this);
+            db.openDB();
+            long result = db.add(txtName.getText().toString(), txtObj.getText().toString());
+            if (result > 0) {
+                txtName.setText("");
+                txtObj.setText("");
+            } else {
+                Toast.makeText(getApplicationContext(), "Failure", Toast.LENGTH_SHORT).show();
+            }
+            //CLOSE DB
+            db.close();
         }
         else{
             Intent nuevo2 = new Intent(this, Editar.class);
             startActivity(nuevo2);
         }
     }
+
 
 
 
@@ -62,4 +79,8 @@ public class Editar extends Activity{
         Intent nuevo3 = new Intent(this, Deudas.class);
         startActivity(nuevo3);
     }
+
+
+
+
 }
