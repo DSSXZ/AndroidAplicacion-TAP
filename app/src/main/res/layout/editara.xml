@@ -193,5 +193,22 @@
         android:layout_toRightOf="@+id/textView3"
         android:layout_toEndOf="@+id/textView3" />
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devuelto "
+        android:textSize="20dp"
+        android:id="@+id/switch1"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_marginBottom="28dp"
+        android:checked="true"
+        android:clickable="true"
+        android:enabled="true"
+        android:allowUndo="false"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
 
 </RelativeLayout>

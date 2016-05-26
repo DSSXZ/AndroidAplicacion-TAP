@@ -30,4 +30,20 @@
         android:onClick="ventanaDeudas"
         android:padding="5dp" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#be8f3434" />
+    </LinearLayout>
+
 </RelativeLayout>

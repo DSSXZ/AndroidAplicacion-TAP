@@ -20,17 +20,20 @@
         android:theme="@style/AppTheme" />
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/back"
+        android:src="@drawable/hme"
         android:clickable="true"
         android:onClick="atras"
         android:contentDescription="@string/bbs"
-        android:cropToPadding="true" />
+        android:cropToPadding="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="81dp"
@@ -45,5 +48,23 @@
         android:layout_alignParentEnd="true"
         android:padding="3dp"
         android:onClick="añadir"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_above="@+id/añadir"
+        android:layout_alignRight="@+id/añadir"
+        android:layout_alignEnd="@+id/añadir">
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#be111010" />
+    </LinearLayout>
 
 </RelativeLayout>
