@@ -64,7 +64,8 @@
             android:id="@+id/listView"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:background="#be111010" />
+            android:background="#be111010"
+            android:longClickable="true" />
     </LinearLayout>
 
     <ImageView

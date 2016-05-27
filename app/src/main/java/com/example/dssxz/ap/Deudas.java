@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,7 @@ public class Deudas extends Activity{
     ListView lv;
     ArrayList<String> players=new ArrayList<String>();
     ArrayAdapter<String> adapter;
+    DBAdapter bas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,10 +51,28 @@ public class Deudas extends Activity{
             public void onItemClick(AdapterView<?> arg0, View arg1, int pos,
                                     long id) {
                 // TODO Auto-generated method stub
-                Intent nuevo2= new Intent(Deudas.this, Editar.class);
-                startActivity(nuevo2);
+                int n=(int)lv.getSelectedItemId();
+                borrar(n);
+                Toast.makeText(getApplicationContext(), "Devuelto", Toast.LENGTH_LONG).show();
+
+
             }
         });
+    }
+
+    private void borrar(int n) {
+        final DBAdapter db1=new DBAdapter(this);
+        players.clear();
+        //OPEN
+        db1.openDB();
+        //RETRIEVE
+        Cursor c=db1.getAllNames();
+        if(c.moveToPosition(n+1)){
+            String name =c.getString(0);
+            db1.delateData(name);
+        }//While
+        lv.setAdapter(adapter);
+        db1.close();
     }
 
     private void initDB() {
@@ -63,7 +83,7 @@ public class Deudas extends Activity{
         //RETRIEVE
         Cursor c=db1.getAllNames();
         while(c.moveToNext()){
-            String name=c.getString(1);
+            String name=c.getString(1)+"   Debe: "+c.getString(2);
             players.add(name);
         }//While
         lv.setAdapter(adapter);

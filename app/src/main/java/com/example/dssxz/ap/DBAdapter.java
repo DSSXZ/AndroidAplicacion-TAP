@@ -132,7 +132,6 @@ public class DBAdapter {
     }*/
 
     public void readDB(){
-
         helper.getReadableDatabase();
     }//readDB
 

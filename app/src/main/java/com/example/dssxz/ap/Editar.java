@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class Editar extends Activity {
     EditText txtName, txtObj,txtDes;
     ImageView btnAdd;
-    Boolean debuelto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

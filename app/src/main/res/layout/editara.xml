@@ -101,11 +101,9 @@
         android:editable="true"
         android:clickable="true"
         android:autoText="true"
-        android:layout_below="@+id/textView4"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
     <DatePicker
         android:layout_width="wrap_content"
@@ -177,7 +175,7 @@
         android:layout_marginTop="21dp" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:inputType="textPersonName"
         android:ems="10"
@@ -187,11 +185,11 @@
         android:editable="true"
         android:clickable="true"
         android:autoText="true"
-        android:layout_above="@+id/textView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
 
     <Switch
         android:layout_width="wrap_content"
