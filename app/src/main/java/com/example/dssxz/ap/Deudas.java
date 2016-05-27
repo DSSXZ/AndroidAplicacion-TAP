@@ -51,9 +51,9 @@ public class Deudas extends Activity{
             public void onItemClick(AdapterView<?> arg0, View arg1, int pos,
                                     long id) {
                 // TODO Auto-generated method stub
-                int n=(int)lv.getSelectedItemId();
+                int n=(int)lv.getSelectedItemPosition();
                 borrar(n);
-                Toast.makeText(getApplicationContext(), "Devuelto", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Devuelto+ ", Toast.LENGTH_LONG).show();
 
 
             }
@@ -67,12 +67,19 @@ public class Deudas extends Activity{
         db1.openDB();
         //RETRIEVE
         Cursor c=db1.getAllNames();
+
+
         if(c.moveToPosition(n+1)){
-            String name =c.getString(0);
+            String name = c.getString(0);
             db1.delateData(name);
         }//While
+
         lv.setAdapter(adapter);
         db1.close();
+    }
+
+    public void casos(){
+
     }
 
     private void initDB() {
