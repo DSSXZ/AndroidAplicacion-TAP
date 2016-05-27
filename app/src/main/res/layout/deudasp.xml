@@ -71,13 +71,15 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:id="@+id/imageView7"
-        android:src="@drawable/hme"
+        android:src="@drawable/actualizar"
         android:clickable="true"
         android:onClick="ver"
         android:contentDescription="@string/bbs"
         android:cropToPadding="true"
         android:layout_alignTop="@+id/imageView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/añadir"
+        android:layout_alignStart="@+id/añadir"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
 
 </RelativeLayout>
