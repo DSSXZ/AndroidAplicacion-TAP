@@ -35,7 +35,6 @@ public class Deudas extends Activity{
     public void atras(View view){
         Intent nuevo2= new Intent(this, MainActivity.class);
         startActivity(nuevo2);
-
     }
 
 
